@@ -2,7 +2,7 @@
 
 O projeto desta semana é uma atividade onde devemos aplicar o conhecimento apreendido na última semana do curso de backend da {reprograma}:
 
-API,
+API-REST,
 POST,
 DELETE.
 
