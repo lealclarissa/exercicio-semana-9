@@ -6,5 +6,6 @@ router.get('/',controller.getAll);
 router.get('/funcionarios', controller.getAll);
 router.get("/:id", controller.getById);
 router.post("/", controller.postFuncionarios);
+router.delete("/:id", controller.deleteFuncionario);
 
 module.exports = router;
