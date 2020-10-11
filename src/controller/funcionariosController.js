@@ -11,7 +11,7 @@ const getById = (req, res) => {
     const id = req.params.id;
   
     res.status(200).send(funcionarios.find((funcionario) => funcionario.id == id));
-  };
+};
 
 ////Cadastro de novos funcionários:
 const postFuncionarios = (req, res) => {
@@ -27,7 +27,7 @@ const postFuncionarios = (req, res) => {
     });
   
     res.status(201).send(funcionarios)
-  };
+};
 
 ////Excluir registo de funcionário:
 const deleteFuncionario = (req, res) => {
@@ -46,4 +46,14 @@ const deleteFuncionario = (req, res) => {
   res.status(200).send(funcionarios)
 };
 
-module.exports = { getAll, getById, postFuncionarios, deleteFuncionario };
+////Acesso à idade de um funcionário, de acordo com seu id:
+const getEmployeesAge = (req, res) => {
+  const id = req.params.id  
+  const funcionarioFiltrado = funcionarios.find((funcionario) => funcionario.id == id);
+  const idadeDoFuncionario = funcionarioFiltrado.age
+  const nomeDoFuncionario = funcionarioFiltrado.name
+  res.status(200).send({ nomeDoFuncionario, idadeDoFuncionario })
+};
+
+
+module.exports = { getAll, getById, postFuncionarios, deleteFuncionario, getEmployeesAge };
