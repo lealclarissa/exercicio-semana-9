@@ -1,4 +1,6 @@
-# Exercício Semana 9
+# API - Livraria - Parte 1
+
+[![livraria](./public/images/livraria.jpg)]('https://br.freepik.com/vetores/escola')
 
 O projeto desta semana é uma atividade onde devemos aplicar o conhecimento apreendido na última semana do curso de backend da {reprograma}:
 
